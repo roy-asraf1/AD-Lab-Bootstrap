@@ -1,0 +1,10 @@
+# create new ou
+nou IT "DC=lab,DC=local" $true
+
+# Add member to group
+# add one member
+Add-ADGroupMember -Identity "IT-Admins" -Members roy.asraf
+#add members
+Add-ADGroupMember -Identity "IT-Admins" -Members user1,user2,user3
+# chaeck group members
+Get-ADGroupMember "IT-Admins"
